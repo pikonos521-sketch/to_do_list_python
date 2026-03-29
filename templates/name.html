@@ -1,0 +1,23 @@
+<h2>Поиск задачи</h2>
+
+<form action="/name" method="post">
+    <input type="text" name="name" placeholder="введите имя">
+    <button type="submit">найти</button>
+</form>
+
+<li><a href="/">перейти в главное меню</a></li>
+
+<hr>
+
+{% if message %}
+<p style="color:red;">{{ message }}</p>
+{% endif %}
+
+{% if task %}
+<p style="color:rgb(0, 255, 204);">{{ message_1 }}</p>
+<h3>Результат:</h3>
+<p>время создания: {{ task["время создания"] }}</p>
+<p>Имя: {{ task["имя"] }}</p>
+<p>Задача: {{ task["info"]["task"] }}</p>
+<p>Сделана: {{ task["сделана"] }}</p>
+{% endif %}

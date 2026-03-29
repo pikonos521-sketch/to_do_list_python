@@ -1,0 +1,20 @@
+<form action="/todo" method="post">
+
+<h2>введите имя задачи</h2>
+<input type="text" name="name">
+
+<h2>введите задачу</h2>
+<textarea name="task" rows="5" cols="40"></textarea>
+
+<h2>введите сделана задача или нет</h2>
+<input type="text" name="done">
+
+<h2><button type="submit">отправить</button></h2>
+</form>
+
+<h4>-</h4>
+<li><a href="/">перейти к главному меню</a></li>
+
+<h1>{{ name }}</h1>
+<p>{{ task }}</p>
+<p>{{ done }}</p>

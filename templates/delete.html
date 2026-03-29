@@ -1,0 +1,15 @@
+<h2>Удалить задачу</h2>
+
+<form action="/del" method="post">
+    <input type="text" name="name" placeholder="имя задачи">
+    <button type="submit">удалить</button>
+</form>
+
+<li><a href="/">перейти к главному меню</a></li>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+
+
